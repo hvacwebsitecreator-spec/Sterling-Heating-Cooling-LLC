@@ -4,35 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Sterling Heating & Cooling, LLC provides professional heating and cooling services in Stanhope, NJ. Over 25 years of experience. Free estimates. Call or text (973) 343-1783."
-  >
+  <meta name="description" content="Sterling Heating & Cooling, LLC provides professional heating and cooling installation and repair services in Stanhope, NJ and surrounding areas. Over 25 years of experience. Free estimates.">
 
   <title>Sterling Heating & Cooling, LLC | Stanhope, NJ</title>
 
   <style>
-
-    /* ==============================
-       GENERAL
-    ============================== */
-
-    :root {
-      --blue: #0755a3;
-      --dark-blue: #052f68;
-      --light-blue: #0b82d4;
-      --red: #ed1c24;
-      --green: #45a85b;
-      --orange: #ff8b19;
-      --purple: #7046cf;
-      --text: #17232d;
-      --muted: #66717c;
-      --white: #ffffff;
-      --light: #f6f8fa;
-      --border: #e1e6eb;
-      --shadow: 0 5px 18px rgba(0,0,0,.12);
-    }
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -45,8 +21,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: white;
+      color: #17232d;
+      background: #ffffff;
       line-height: 1.5;
     }
 
@@ -56,181 +32,142 @@
     }
 
     img {
-      display: block;
       max-width: 100%;
+      display: block;
     }
 
-
-    /* ==============================
+    /* =========================
        TOP BAR
-    ============================== */
+    ========================= */
 
     .topbar {
-      background: linear-gradient(90deg, #df0710, #f32626);
+      background: linear-gradient(90deg, #d90000, #ef2424);
       color: white;
       font-size: 13px;
-      font-weight: 700;
+      font-weight: bold;
     }
 
     .topbar-inner {
       max-width: 1180px;
       margin: auto;
-      min-height: 35px;
-      padding: 0 18px;
+      padding: 8px 18px;
 
       display: flex;
-      align-items: center;
       justify-content: space-between;
-
+      align-items: center;
       gap: 20px;
     }
 
-
-    /* ==============================
-       NAVIGATION
-    ============================== */
+    /* =========================
+       HEADER
+    ========================= */
 
     header {
       background: white;
-      border-bottom: 1px solid #ddd;
-
+      border-bottom: 1px solid #dddddd;
       position: sticky;
       top: 0;
-
       z-index: 1000;
     }
 
     .nav {
       max-width: 1180px;
-      min-height: 78px;
-
       margin: auto;
-      padding: 0 18px;
+      min-height: 105px;
+      padding: 8px 18px;
 
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       gap: 25px;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
+      min-width: 260px;
+    }
 
-      color: var(--blue);
+    /* YOUR STERLING LOGO */
+
+    .brand-logo {
+      width: 95px;
+      height: 95px;
+      object-fit: contain;
+    }
+
+    .brand-text {
       font-weight: 900;
+      line-height: 1;
     }
 
-    .brand-mark {
-      width: 55px;
-      height: 55px;
-
-      border-radius: 50%;
-
-      display: grid;
-      place-items: center;
-
+    .brand-text .sterling {
+      color: #073d79;
       font-size: 28px;
-
-      background: linear-gradient(135deg,#e8f7ff,#fff);
-
-      border: 3px solid #e7eef5;
+      letter-spacing: 1px;
     }
 
-    .brand-name {
-      font-size: 25px;
-      line-height: .95;
-      letter-spacing: .2px;
-    }
-
-    .brand-name b {
-      color: var(--red);
-    }
-
-    .brand-name small {
-      display: block;
-
-      color: var(--red);
-
-      font-size: 12px;
-
-      letter-spacing: .8px;
-
-      margin-top: 4px;
+    .brand-text .heating {
+      color: #e11c22;
+      font-size: 15px;
+      margin-top: 5px;
     }
 
     .navlinks {
       display: flex;
       align-items: center;
-
-      gap: 25px;
-
+      gap: 22px;
       font-size: 14px;
       font-weight: 800;
     }
 
     .navlinks a:hover {
-      color: var(--red);
+      color: #e11920;
     }
 
-    .navphone {
-      background: linear-gradient(
-        90deg,
-        var(--blue),
-        #116ec5
-      );
-
+    .phone-button {
+      background: #df151b;
       color: white;
+      padding: 14px 18px;
+      border-radius: 6px;
+      font-weight: 900;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
 
-      padding: 12px 17px;
-
-      border-radius: 8px;
-
-      box-shadow: var(--shadow);
+    .phone-button:hover {
+      background: #bd0d12;
+      color: white !important;
     }
 
     .menu {
       display: none;
-
-      border: none;
-
-      background: #edf5fb;
-
-      color: var(--blue);
-
+      border: 0;
+      background: #edf4fa;
+      color: #073d79;
       font-size: 24px;
-
-      padding: 8px 11px;
-
-      border-radius: 8px;
-
+      padding: 8px 12px;
+      border-radius: 6px;
       cursor: pointer;
     }
 
-
-    /* ==============================
+    /* =========================
        HERO
-    ============================== */
+    ========================= */
 
     .hero {
       position: relative;
-
-      min-height: 450px;
-
+      min-height: 475px;
       overflow: hidden;
-
-      background: #073663;
+      background: #062d57;
     }
 
     .hero-image {
       position: absolute;
-
-      top: 0;
       right: 0;
+      top: 0;
 
-      width: 52%;
+      width: 58%;
       height: 100%;
 
       object-fit: cover;
@@ -238,194 +175,152 @@
 
     .hero-overlay {
       position: absolute;
-
       inset: 0;
 
       background:
         linear-gradient(
           90deg,
-          #052b50 0%,
-          #073d70 38%,
-          rgba(7,61,112,.35) 58%,
-          rgba(7,61,112,0) 100%
+          #031f3e 0%,
+          #062e58 38%,
+          rgba(6,46,88,0.55) 57%,
+          rgba(6,46,88,0) 100%
         );
     }
 
     .hero-inner {
       position: relative;
-
       z-index: 2;
 
       max-width: 1180px;
-
-      min-height: 450px;
+      min-height: 475px;
 
       margin: auto;
-
-      padding: 58px 18px;
+      padding: 55px 18px;
 
       display: flex;
-
       align-items: center;
     }
 
-    .hero-copy {
-      width: 57%;
-
+    .hero-content {
+      width: 58%;
       color: white;
     }
 
-    .hero-copy h1 {
+    .hero h1 {
       font-size: 48px;
-
-      line-height: 1.02;
-
+      line-height: 1.03;
       text-transform: uppercase;
-
-      letter-spacing: -1px;
-
-      margin-bottom: 12px;
-    }
-
-    .hero-copy h1 span {
-      color: #2db9ef;
-
       font-style: italic;
+      margin-bottom: 15px;
     }
 
-    .hero-copy h2 {
-      font-size: 20px;
+    .hero h1 .blue {
+      color: #159de0;
+    }
 
+    .hero h2 {
+      font-size: 20px;
       margin-bottom: 12px;
     }
 
-    .hero-copy p {
-      max-width: 590px;
-
-      color: #e9f3fb;
-
-      font-size: 16px;
-
-      margin-bottom: 22px;
+    .hero p {
+      max-width: 580px;
+      color: #e7f0f7;
+      font-size: 15px;
+      margin-bottom: 20px;
     }
 
-    .hero-badges {
+    .badges {
       display: flex;
-
-      gap: 28px;
-
-      margin: 15px 0 24px;
-
+      gap: 25px;
       flex-wrap: wrap;
+      margin: 20px 0;
     }
 
     .badge {
       display: flex;
-
       align-items: center;
-
-      gap: 8px;
-
-      font-size: 13px;
-
-      font-weight: 800;
+      gap: 9px;
+      font-size: 12px;
+      font-weight: 900;
     }
 
     .badge-icon {
-      font-size: 22px;
+      font-size: 27px;
     }
 
     .hero-buttons {
       display: flex;
-
-      gap: 14px;
-
+      gap: 12px;
       flex-wrap: wrap;
     }
 
-
-    /* ==============================
+    /* =========================
        BUTTONS
-    ============================== */
+    ========================= */
 
     .btn {
-      min-height: 45px;
-
-      padding: 0 20px;
-
-      border-radius: 5px;
-
       display: inline-flex;
-
       align-items: center;
       justify-content: center;
 
+      min-height: 45px;
+      padding: 0 20px;
+
+      border-radius: 5px;
+      font-weight: 900;
       font-size: 14px;
 
-      font-weight: 900;
-
-      border: 2px solid transparent;
-
-      transition: .2s;
+      transition: 0.2s;
     }
 
     .btn:hover {
-      filter: brightness(.94);
-
-      transform: translateY(-1px);
+      transform: translateY(-2px);
+      filter: brightness(0.95);
     }
 
     .btn-red {
-      background: var(--red);
-
+      background: #e11920;
       color: white;
     }
 
     .btn-blue {
-      background: #0784db;
-
+      background: #0758ae;
       color: white;
     }
 
     .btn-white {
       background: white;
-
-      color: var(--blue);
+      color: #0758ae;
     }
 
-
-    /* ==============================
+    /* =========================
        EMERGENCY BAR
-    ============================== */
+    ========================= */
 
     .emergency {
       display: grid;
-
       grid-template-columns: 1fr 1fr;
-
       color: white;
     }
 
     .emergency-left,
     .emergency-right {
-      min-height: 62px;
-
-      padding: 8px 20px;
+      min-height: 66px;
 
       display: flex;
-
       align-items: center;
       justify-content: center;
 
-      gap: 16px;
+      gap: 15px;
     }
 
     .emergency-left {
-      background: var(--red);
+      background: #e11920;
     }
 
     .emergency-right {
-      background: #096bc4;
+      background: #0758ae;
     }
 
     .emergency strong {
@@ -434,484 +329,341 @@
 
     .emergency small {
       display: block;
-
       font-size: 12px;
     }
 
-
-    /* ==============================
+    /* =========================
        SECTIONS
-    ============================== */
+    ========================= */
 
     section {
-      padding: 45px 18px;
+      padding: 48px 18px;
     }
 
     .container {
       max-width: 1180px;
-
       margin: auto;
     }
 
     .section-title {
-      display: flex;
-
-      align-items: center;
-      justify-content: center;
-
-      gap: 15px;
-
-      margin-bottom: 25px;
-    }
-
-    .section-title::before,
-    .section-title::after {
-      content: "";
-
-      height: 2px;
-
-      width: 70px;
-
-      background: #cdd7e0;
+      text-align: center;
+      margin-bottom: 28px;
     }
 
     .section-title h2 {
-      font-size: 27px;
-
+      font-size: 28px;
       text-transform: uppercase;
-
-      color: #151d25;
     }
 
-    .section-title h2 span {
-      color: var(--red);
+    .section-title .red {
+      color: #e11920;
     }
 
-    .section-title h2 .blue {
-      color: var(--blue);
+    .section-title .blue {
+      color: #0758ae;
     }
 
-
-    /* ==============================
+    /* =========================
        SERVICES
-    ============================== */
-
-    .services {
-      background: white;
-    }
+    ========================= */
 
     .service-grid {
       display: grid;
-
-      grid-template-columns: repeat(5,1fr);
-
+      grid-template-columns: repeat(5, 1fr);
       gap: 15px;
     }
 
     .service-card {
-      border: 1px solid var(--border);
-
       background: white;
-
-      box-shadow: 0 3px 11px rgba(0,0,0,.08);
-
-      border-radius: 4px;
-
+      border: 1px solid #dfe5ea;
+      border-radius: 7px;
       overflow: hidden;
-
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
       text-align: center;
-
-      transition: .2s;
+      transition: 0.2s;
     }
 
     .service-card:hover {
-      transform: translateY(-4px);
-
-      box-shadow: var(--shadow);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.14);
     }
 
     .service-card img {
-      height: 120px;
-
       width: 100%;
-
+      height: 125px;
       object-fit: cover;
     }
 
     .service-body {
-      padding: 15px 11px 17px;
+      padding: 14px;
     }
 
     .service-icon {
-      width: 43px;
-      height: 43px;
+      width: 45px;
+      height: 45px;
+
+      margin: -37px auto 8px;
 
       border-radius: 50%;
-
-      margin: -37px auto 9px;
-
-      position: relative;
+      border: 3px solid white;
 
       display: grid;
       place-items: center;
 
       color: white;
+      font-size: 21px;
 
-      font-size: 20px;
-
-      border: 3px solid white;
+      position: relative;
     }
 
-    .snow {
-      background: #149fe1;
+    .icon-blue {
+      background: #119ddd;
     }
 
-    .fire {
-      background: var(--red);
+    .icon-red {
+      background: #e11920;
     }
 
-    .maint {
-      background: var(--green);
+    .icon-green {
+      background: #36a34b;
     }
 
-    .air {
-      background: var(--purple);
+    .icon-purple {
+      background: #7046cf;
     }
 
-    .install {
-      background: var(--orange);
+    .icon-orange {
+      background: #f08a17;
     }
 
     .service-card h3 {
-      font-size: 15px;
-
-      color: var(--blue);
-
-      margin-bottom: 5px;
-    }
-
-    .service-card:nth-child(2) h3 {
-      color: var(--red);
-    }
-
-    .service-card:nth-child(3) h3 {
-      color: #2e8b44;
-    }
-
-    .service-card:nth-child(4) h3 {
-      color: var(--purple);
-    }
-
-    .service-card:nth-child(5) h3 {
-      color: #e17a00;
+      font-size: 14px;
+      color: #0758ae;
+      margin-bottom: 6px;
     }
 
     .service-card p {
-      min-height: 55px;
-
       font-size: 12px;
-
-      color: #505b64;
+      color: #555f67;
+      min-height: 55px;
     }
 
     .learn {
       display: inline-block;
-
       margin-top: 8px;
-
+      color: #0758ae;
       font-size: 12px;
-
       font-weight: 900;
-
-      color: var(--blue);
     }
 
-
-    /* ==============================
+    /* =========================
        ABOUT
-    ============================== */
+    ========================= */
 
-    .about-wrap {
+    .about {
+      background: #f7f9fb;
+    }
+
+    .about-grid {
       display: grid;
-
       grid-template-columns: 1fr 1fr;
-
       gap: 45px;
-
       align-items: center;
     }
 
-    .about-copy p {
+    .about h2 {
+      font-size: 29px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .about h2 span {
+      color: #e11920;
+    }
+
+    .about p {
+      color: #555f67;
       font-size: 14px;
-
-      color: #4d5862;
-
       margin-bottom: 13px;
     }
 
     .about-photo {
-      overflow: hidden;
-
       border-radius: 8px;
-
-      box-shadow: var(--shadow);
+      overflow: hidden;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.14);
     }
 
     .about-photo img {
       width: 100%;
-
-      height: 285px;
-
+      height: 300px;
       object-fit: cover;
     }
 
     .why {
-      margin-top: 15px;
+      margin-top: 18px;
     }
 
     .why h3 {
-      font-size: 21px;
-
       margin-bottom: 8px;
     }
 
     .why li {
       list-style: none;
-
+      margin: 6px 0;
       font-size: 13px;
-
-      margin: 7px 0;
-
-      font-weight: 700;
+      font-weight: bold;
     }
 
     .why li::before {
       content: "✓";
-
-      display: inline-grid;
-
-      place-items: center;
-
+      background: #40a553;
+      color: white;
       width: 18px;
       height: 18px;
-
+      display: inline-grid;
+      place-items: center;
       border-radius: 50%;
-
-      background: #43a45b;
-
-      color: white;
-
-      margin-right: 8px;
-
+      margin-right: 7px;
       font-size: 11px;
     }
 
-
-    /* ==============================
+    /* =========================
        OUR WORK
-    ============================== */
+    ========================= */
 
     .work {
-      background: #f8fafc;
+      background: white;
     }
 
     .work-grid {
       display: grid;
-
-      grid-template-columns: repeat(5,1fr);
-
+      grid-template-columns: repeat(5, 1fr);
       gap: 9px;
     }
 
     .work-grid img {
       width: 100%;
-
       height: 120px;
-
       object-fit: cover;
-
       border-radius: 5px;
     }
 
-    .center {
-      text-align: center;
-
-      margin-top: 18px;
-    }
-
-
-    /* ==============================
+    /* =========================
        REVIEWS
-    ============================== */
+    ========================= */
 
-    .review-grid {
-      display: grid;
-
-      grid-template-columns: 1fr;
-
+    .review {
       max-width: 700px;
-
       margin: auto;
-    }
 
-    .review-card {
-      border: 1px solid #e2e6ea;
-
-      border-radius: 7px;
+      background: white;
+      border: 1px solid #e1e6eb;
+      border-radius: 8px;
 
       padding: 20px;
 
-      background: white;
-
-      box-shadow: 0 3px 12px rgba(0,0,0,.06);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.07);
     }
 
-    .review-top {
+    .review-header {
       display: flex;
-
       justify-content: space-between;
-
-      gap: 12px;
+      gap: 15px;
     }
 
     .review-name {
       font-weight: 900;
     }
 
-    .review-place {
+    .review-location {
+      color: #707b84;
       font-size: 12px;
-
-      color: #69747e;
     }
 
     .stars {
-      color: #ffae00;
-
+      color: #ffad00;
+      font-size: 19px;
       letter-spacing: 1px;
-
-      font-size: 18px;
-
-      white-space: nowrap;
     }
 
     .review-date {
       font-size: 11px;
-
       color: #777;
-
       text-align: right;
     }
 
-    .review-card p {
+    .review p {
+      color: #505a63;
       font-size: 13px;
-
-      color: #4b555e;
-
       margin-top: 12px;
     }
 
+    /* =========================
+       CONTACT
+    ========================= */
 
-    /* ==============================
-       CONTACT / FREE ESTIMATE
-    ============================== */
-
-    .contact-panel {
-      background:
-        linear-gradient(
-          135deg,
-          #eef8ff,
-          #fff4f4
-        );
-
-      padding: 38px 18px;
-
-      border-top: 1px solid #dce5ec;
+    .contact {
+      background: linear-gradient(
+        135deg,
+        #eaf7ff,
+        #fff1f1
+      );
     }
 
-    .contact-panel-inner {
+    .contact-inner {
       display: flex;
-
-      align-items: center;
-
       justify-content: space-between;
-
-      gap: 30px;
+      align-items: center;
+      gap: 25px;
     }
 
-    .contact-kicker {
-      color: var(--red);
-
-      font-weight: 900;
-
-      font-size: 12px;
-
-      letter-spacing: 1.4px;
-
-      margin-bottom: 4px;
-    }
-
-    .contact-panel h2 {
+    .contact h2 {
       font-size: 29px;
-
       text-transform: uppercase;
-
-      color: #10263a;
-
-      margin-bottom: 6px;
+      color: #102c48;
     }
 
-    .contact-panel p {
-      color: #586571;
-
+    .contact p {
+      color: #5c6872;
+      margin-top: 6px;
       font-size: 14px;
-
-      max-width: 670px;
     }
 
     .contact-actions {
       display: flex;
-
       gap: 10px;
-
       flex-wrap: wrap;
     }
 
-
-    /* ==============================
+    /* =========================
        BOTTOM CTA
-    ============================== */
+    ========================= */
 
     .bottom-cta {
       display: grid;
-
       grid-template-columns: 1fr 1fr;
-
       color: white;
     }
 
     .bottom-call,
-    .bottom-estimate {
-      padding: 22px 20px;
-
+    .bottom-text {
+      padding: 22px;
       display: flex;
-
       align-items: center;
       justify-content: center;
-
-      gap: 18px;
+      gap: 15px;
     }
 
     .bottom-call {
-      background: #0759ae;
+      background: #0758ae;
     }
 
-    .bottom-estimate {
-      background: var(--red);
+    .bottom-text {
+      background: #e11920;
     }
 
     .bottom-cta strong {
       font-size: 18px;
-
       display: block;
     }
 
@@ -919,127 +671,113 @@
       font-size: 12px;
     }
 
-
-    /* ==============================
+    /* =========================
        FOOTER
-    ============================== */
+    ========================= */
 
     footer {
-      background: white;
-
       padding: 35px 18px 20px;
-
+      background: white;
       border-top: 1px solid #ddd;
     }
 
     .footer-grid {
       max-width: 1180px;
-
       margin: auto;
 
       display: grid;
-
       grid-template-columns: 1.3fr 1fr 1fr 1fr;
-
       gap: 30px;
     }
 
     footer h3,
     footer h4 {
-      color: var(--blue);
-
+      color: #0758ae;
       margin-bottom: 10px;
     }
 
     footer p,
     footer li {
+      color: #606b74;
       font-size: 12px;
-
-      color: #5d6872;
-
-      list-style: none;
-
       margin: 5px 0;
+      list-style: none;
     }
 
     footer a:hover {
-      color: var(--red);
+      color: #e11920;
     }
 
     .copyright {
       max-width: 1180px;
-
       margin: 20px auto 0;
-
-      border-top: 1px solid #e5e5e5;
-
       padding-top: 14px;
+      border-top: 1px solid #e4e4e4;
 
       text-align: center;
-
       font-size: 11px;
-
       color: #777;
     }
 
-
-    /* ==============================
+    /* =========================
        MOBILE CALL BUTTON
-    ============================== */
+    ========================= */
 
     .mobile-call {
       display: none;
+
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+
+      z-index: 2000;
+
+      background: #e11920;
+      color: white;
+
+      padding: 13px;
+
+      text-align: center;
+
+      border-radius: 7px;
+
+      font-weight: 900;
+
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
     }
 
-
-    /* ==============================
+    /* =========================
        TABLET
-    ============================== */
+    ========================= */
 
-    @media(max-width: 900px) {
+    @media(max-width: 950px) {
 
       .navlinks {
-        gap: 14px;
+        gap: 12px;
       }
 
       .service-grid {
-        grid-template-columns: repeat(3,1fr);
-      }
-
-      .hero-image {
-        left: 43%;
-
-        width: 57%;
-      }
-
-      .hero-copy {
-        width: 63%;
-      }
-
-      .hero-copy h1 {
-        font-size: 40px;
+        grid-template-columns: repeat(3, 1fr);
       }
 
       .work-grid {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
 
       .footer-grid {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
-
     }
 
-
-    /* ==============================
+    /* =========================
        MOBILE
-    ============================== */
+    ========================= */
 
-    @media(max-width: 680px) {
+    @media(max-width: 700px) {
 
       .topbar-inner {
         justify-content: center;
-
         text-align: center;
       }
 
@@ -1048,16 +786,24 @@
       }
 
       .nav {
-        min-height: 68px;
+        min-height: 75px;
       }
 
-      .brand-name {
-        font-size: 19px;
+      .brand {
+        min-width: 0;
       }
 
-      .brand-mark {
-        width: 45px;
-        height: 45px;
+      .brand-logo {
+        width: 65px;
+        height: 65px;
+      }
+
+      .brand-text .sterling {
+        font-size: 21px;
+      }
+
+      .brand-text .heating {
+        font-size: 11px;
       }
 
       .menu {
@@ -1071,15 +817,13 @@
 
         left: 0;
         right: 0;
-
-        top: 68px;
+        top: 75px;
 
         background: white;
 
-        padding: 12px 18px;
+        padding: 15px;
 
         flex-direction: column;
-
         align-items: stretch;
 
         border-bottom: 1px solid #ddd;
@@ -1089,21 +833,17 @@
         display: flex;
       }
 
-      .navphone {
+      .phone-button {
         text-align: center;
       }
 
       .hero {
-        min-height: 600px;
+        min-height: 610px;
       }
 
       .hero-image {
         left: 0;
-
-        top: 0;
-
         width: 100%;
-
         height: 300px;
       }
 
@@ -1111,54 +851,54 @@
         background:
           linear-gradient(
             180deg,
-            rgba(3,39,70,.15) 0%,
-            rgba(4,42,75,.25) 32%,
-            #052b50 55%,
-            #052b50 100%
+            rgba(0,35,70,0.05),
+            rgba(4,39,72,0.3) 35%,
+            #052d55 55%,
+            #052d55 100%
           );
       }
 
       .hero-inner {
-        min-height: 600px;
-
-        padding: 250px 18px 35px;
-
+        min-height: 610px;
+        padding: 255px 18px 35px;
         align-items: flex-end;
       }
 
-      .hero-copy {
+      .hero-content {
         width: 100%;
       }
 
-      .hero-copy h1 {
+      .hero h1 {
         font-size: 35px;
       }
 
-      .hero-copy p {
-        font-size: 14px;
+      .hero h2 {
+        font-size: 17px;
       }
 
-      .hero-badges {
-        gap: 12px;
+      .hero p {
+        font-size: 13px;
+      }
 
+      .badges {
+        gap: 12px;
         justify-content: space-between;
       }
 
       .badge {
-        font-size: 11px;
+        font-size: 10px;
+      }
+
+      .badge-icon {
+        font-size: 21px;
       }
 
       .emergency {
         grid-template-columns: 1fr;
       }
 
-      .emergency-left,
-      .emergency-right {
-        min-height: 58px;
-      }
-
       .service-grid,
-      .about-wrap {
+      .about-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1166,22 +906,13 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      .bottom-cta {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-panel-inner {
+      .contact-inner {
         flex-direction: column;
-
         align-items: flex-start;
       }
 
-      .contact-actions {
-        justify-content: flex-start;
-      }
-
-      .contact-panel h2 {
-        font-size: 24px;
+      .bottom-cta {
+        grid-template-columns: 1fr;
       }
 
       .footer-grid {
@@ -1190,55 +921,27 @@
 
       .mobile-call {
         display: block;
-
-        position: fixed;
-
-        left: 12px;
-        right: 12px;
-
-        bottom: 12px;
-
-        z-index: 2000;
-
-        background: var(--red);
-
-        color: white;
-
-        text-align: center;
-
-        padding: 13px;
-
-        border-radius: 6px;
-
-        font-weight: 900;
-
-        box-shadow:
-          0 6px 22px rgba(0,0,0,.25);
       }
 
       footer {
         padding-bottom: 85px;
       }
-
     }
-
   </style>
 </head>
 
-
 <body>
 
-
-  <!-- ==============================
+  <!-- =========================
        TOP BAR
-  ============================== -->
+  ========================= -->
 
   <div class="topbar">
 
     <div class="topbar-inner">
 
       <span>
-        ◷ OPEN NOW!
+        OPEN NOW!
         &nbsp; | &nbsp;
         Mon - Fri: 8:00 AM - 4:30 PM
         &nbsp; | &nbsp;
@@ -1246,8 +949,7 @@
       </span>
 
       <span>
-        📍 Proudly Serving Stanhope, NJ
-        &amp; Surrounding Areas
+        Serving Stanhope, NJ & Surrounding Areas
       </span>
 
     </div>
@@ -1255,37 +957,34 @@
   </div>
 
 
-  <!-- ==============================
-       NAVIGATION
-  ============================== -->
+  <!-- =========================
+       HEADER
+  ========================= -->
 
   <header>
 
     <nav class="nav">
 
-      <a
-        class="brand"
-        href="#home">
+      <a class="brand" href="#home">
 
-        <span class="brand-mark">
-          ❄️🔥
-        </span>
+        <!-- STERLING LOGO -->
+        <img
+          class="brand-logo"
+          src="sterling-logo.png"
+          alt="Sterling Heating & Cooling LLC Logo"
+        >
 
-        <span class="brand-name">
+        <div class="brand-text">
 
-          STERLING
+          <div class="sterling">
+            STERLING
+          </div>
 
-          <br>
+          <div class="heating">
+            HEATING & COOLING, LLC
+          </div>
 
-          <b>
-            HEATING &amp; COOLING
-          </b>
-
-          <small>
-            LLC
-          </small>
-
-        </span>
+        </div>
 
       </a>
 
@@ -1293,7 +992,7 @@
       <button
         class="menu"
         id="menuBtn"
-        aria-label="Open navigation menu">
+        aria-label="Open menu">
 
         ☰
 
@@ -1328,11 +1027,13 @@
           CONTACT
         </a>
 
+        <!-- WORKING PHONE BUTTON -->
         <a
-          class="navphone"
+          class="phone-button"
           href="tel:+19733431783">
 
-          ☎ (973) 343-1783
+          CALL
+          (973) 343-1783
 
         </a>
 
@@ -1343,28 +1044,25 @@
   </header>
 
 
-  <!-- ==============================
-       MAIN
-  ============================== -->
+  <!-- =========================
+       HERO
+  ========================= -->
 
   <main id="home">
-
-
-    <!-- HERO -->
 
     <section class="hero">
 
       <img
         class="hero-image"
         src="https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg?auto=compress&cs=tinysrgb&w=1600"
-        alt="HVAC technician working on heating and cooling equipment">
+        alt="HVAC technician working">
 
       <div class="hero-overlay"></div>
 
 
       <div class="hero-inner">
 
-        <div class="hero-copy">
+        <div class="hero-content">
 
           <h1>
 
@@ -1372,7 +1070,7 @@
 
             <br>
 
-            <span>
+            <span class="blue">
               COMFORTABLE
             </span>
 
@@ -1384,14 +1082,13 @@
 
 
           <h2>
-            Reliable Heating &amp; Cooling
-            Solutions You Can Count On.
+            Reliable Heating & Cooling Solutions You Can Count On.
           </h2>
 
 
           <p>
 
-            Welcome to Sterling Heating &amp; Cooling, LLC.
+            Welcome to Sterling Heating & Cooling, LLC.
             With over 25 years experience, we proudly service
             Stanhope and the local area providing installations
             and repairs for any heating and cooling project
@@ -1400,7 +1097,7 @@
           </p>
 
 
-          <div class="hero-badges">
+          <div class="badges">
 
             <div class="badge">
 
@@ -1448,17 +1145,19 @@
 
           <div class="hero-buttons">
 
+            <!-- WORKING CALL BUTTON -->
             <a
               class="btn btn-red"
               href="tel:+19733431783">
 
-              ☎ CALL NOW
+              CALL NOW
               &nbsp;
               (973) 343-1783
 
             </a>
 
 
+            <!-- FREE ESTIMATE CALL -->
             <a
               class="btn btn-blue"
               href="tel:+19733431783">
@@ -1476,15 +1175,15 @@
     </section>
 
 
-    <!-- ==============================
-         EMERGENCY
-    ============================== -->
+    <!-- =========================
+         EMERGENCY BAR
+    ========================= -->
 
     <div class="emergency">
 
       <div class="emergency-left">
 
-        <span style="font-size:29px">
+        <span style="font-size:28px">
           🚨
         </span>
 
@@ -1505,7 +1204,7 @@
 
       <div class="emergency-right">
 
-        <span style="font-size:29px">
+        <span style="font-size:28px">
           ☎
         </span>
 
@@ -1530,23 +1229,20 @@
     </div>
 
 
-    <!-- ==============================
+    <!-- =========================
          SERVICES
-    ============================== -->
+    ========================= -->
 
-    <section
-      class="services"
-      id="services">
+    <section id="services">
 
       <div class="container">
-
 
         <div class="section-title">
 
           <h2>
 
             OUR
-            <span>
+            <span class="red">
               HVAC
             </span>
 
@@ -1568,11 +1264,11 @@
 
             <img
               src="https://images.pexels.com/photos/4254166/pexels-photo-4254166.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Air conditioning system">
+              alt="Air conditioning service">
 
             <div class="service-body">
 
-              <div class="service-icon snow">
+              <div class="service-icon icon-blue">
                 ❄
               </div>
 
@@ -1581,7 +1277,7 @@
               </h3>
 
               <p>
-                Installation, repair &amp; maintenance
+                Installation, repair and maintenance
                 to keep you cool all summer long.
               </p>
 
@@ -1604,11 +1300,11 @@
 
             <img
               src="https://images.pexels.com/photos/6990196/pexels-photo-6990196.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Heating system">
+              alt="Heating system service">
 
             <div class="service-body">
 
-              <div class="service-icon fire">
+              <div class="service-icon icon-red">
                 🔥
               </div>
 
@@ -1617,8 +1313,8 @@
               </h3>
 
               <p>
-                Furnace &amp; heating system installation,
-                repair &amp; maintenance.
+                Heating system installation,
+                repair and maintenance.
               </p>
 
               <a
@@ -1640,12 +1336,12 @@
 
             <img
               src="https://images.pexels.com/photos/4792509/pexels-photo-4792509.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="HVAC thermostat">
+              alt="HVAC maintenance">
 
             <div class="service-body">
 
-              <div class="service-icon maint">
-                ⚙
+              <div class="service-icon icon-green">
+                🔧
               </div>
 
               <h3>
@@ -1653,8 +1349,8 @@
               </h3>
 
               <p>
-                Regular tune-ups improve efficiency
-                &amp; extend system life.
+                Regular tune-ups can improve efficiency
+                and help extend system life.
               </p>
 
               <a
@@ -1676,11 +1372,11 @@
 
             <img
               src="https://images.pexels.com/photos/6990104/pexels-photo-6990104.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Indoor air quality system">
+              alt="Indoor air quality">
 
             <div class="service-body">
 
-              <div class="service-icon air">
+              <div class="service-icon icon-purple">
                 ≋
               </div>
 
@@ -1689,8 +1385,8 @@
               </h3>
 
               <p>
-                Breathe easier with our air quality
-                products &amp; solutions.
+                Solutions designed to help improve
+                the air inside your home.
               </p>
 
               <a
@@ -1716,8 +1412,8 @@
 
             <div class="service-body">
 
-              <div class="service-icon install">
-                🔧
+              <div class="service-icon icon-orange">
+                ⚙
               </div>
 
               <h3>
@@ -1726,7 +1422,7 @@
 
               <p>
                 Professional installation of heating
-                &amp; cooling systems.
+                and cooling systems.
               </p>
 
               <a
@@ -1749,76 +1445,53 @@
     </section>
 
 
-    <!-- ==============================
+    <!-- =========================
          ABOUT
-    ============================== -->
+    ========================= -->
 
-    <section id="about">
+    <section
+      class="about"
+      id="about">
 
-      <div class="container about-wrap">
-
-
-        <div>
-
-          <div
-            class="section-title"
-            style="justify-content:flex-start;margin-bottom:12px">
-
-            <h2>
-
-              ABOUT STERLING
-
-              <span>
-                HEATING &amp; COOLING, LLC
-              </span>
-
-            </h2>
-
-          </div>
-
-
-          <div class="about-copy">
-
-            <p>
-
-              Welcome to Sterling Heating &amp; Cooling, LLC.
-              With over 25 years experience, we proudly service
-              Stanhope and the local area providing installations
-              and repairs for any heating and cooling project
-              you may have.
-
-            </p>
-
-
-            <p>
-
-              Call us today to get a free estimate!
-
-            </p>
-
-
-            <a
-              class="btn btn-red"
-              href="tel:+19733431783">
-
-              ☎ CALL US TODAY
-
-            </a>
-
-          </div>
-
-        </div>
+      <div class="container about-grid">
 
 
         <div>
 
-          <div class="about-photo">
+          <h2>
 
-            <img
-              src="https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="HVAC technician working">
+            ABOUT STERLING
 
-          </div>
+            <span>
+              HEATING & COOLING
+            </span>
+
+          </h2>
+
+
+          <p>
+
+            Welcome to Sterling Heating & Cooling, LLC.
+            With over 25 years experience, we proudly service
+            Stanhope and the local area providing installations
+            and repairs for any heating and cooling project
+            you may have.
+
+          </p>
+
+
+          <p>
+            Call us today to get a free estimate!
+          </p>
+
+
+          <a
+            class="btn btn-red"
+            href="tel:+19733431783">
+
+            CALL US TODAY
+
+          </a>
 
 
           <div class="why">
@@ -1827,7 +1500,6 @@
               WHY CHOOSE US?
             </h3>
 
-
             <ul>
 
               <li>
@@ -1835,7 +1507,7 @@
               </li>
 
               <li>
-                Honest, Reliable &amp; Affordable
+                Honest, Reliable & Affordable
               </li>
 
               <li>
@@ -1856,21 +1528,27 @@
 
         </div>
 
+
+        <div class="about-photo">
+
+          <img
+            src="https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="HVAC professional">
+
+        </div>
+
       </div>
 
     </section>
 
 
-    <!-- ==============================
+    <!-- =========================
          OUR WORK
-    ============================== -->
+    ========================= -->
 
-    <section
-      class="work"
-      id="work">
+    <section id="work">
 
       <div class="container">
-
 
         <div class="section-title">
 
@@ -1894,11 +1572,11 @@
 
           <img
             src="https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt="HVAC service">
+            alt="HVAC technician">
 
           <img
             src="https://images.pexels.com/photos/6990196/pexels-photo-6990196.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt="Heating equipment">
+            alt="Heating system">
 
           <img
             src="https://images.pexels.com/photos/5463577/pexels-photo-5463577.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -1911,7 +1589,7 @@
         </div>
 
 
-        <div class="center">
+        <div style="text-align:center;margin-top:20px">
 
           <a
             class="btn btn-blue"
@@ -1928,16 +1606,15 @@
     </section>
 
 
-    <!-- ==============================
+    <!-- =========================
          REVIEWS
-    ============================== -->
+    ========================= -->
 
     <section
-      class="reviews"
-      id="reviews">
+      id="reviews"
+      style="background:#f7f9fb">
 
       <div class="container">
-
 
         <div class="section-title">
 
@@ -1945,7 +1622,7 @@
 
             WHAT OUR
             <span class="blue">
-              CUSTOMERS SAY
+              CUSTOMER SAYS
             </span>
 
           </h2>
@@ -1953,52 +1630,46 @@
         </div>
 
 
-        <div class="review-grid">
+        <div class="review">
 
+          <div class="review-header">
 
-          <article class="review-card">
+            <div>
 
-            <div class="review-top">
-
-              <div>
-
-                <div class="review-name">
-                  Katy S.
-                </div>
-
-                <div class="review-place">
-                  Hopatcong, NJ
-                </div>
-
+              <div class="review-name">
+                Katy S.
               </div>
 
-
-              <div>
-
-                <div class="stars">
-                  ★★★★★
-                </div>
-
-                <div class="review-date">
-                  Feb 25, 2018
-                </div>
-
+              <div class="review-location">
+                Hopatcong, NJ
               </div>
 
             </div>
 
 
-            <p>
+            <div>
 
-              “Great company, fast service, friendly family business.
-              Free quotes and was much less then 3 other quotes they
-              kept the house clean throws everything off and the system
-              works great!”
+              <div class="stars">
+                ★★★★★
+              </div>
 
-            </p>
+              <div class="review-date">
+                Feb 25, 2018
+              </div>
 
-          </article>
+            </div>
 
+          </div>
+
+
+          <p>
+
+            “Great company, fast service, friendly family business.
+            Free quotes and was much less then 3 other quotes they
+            kept the house clean throws everything off and the system
+            works great!”
+
+          </p>
 
         </div>
 
@@ -2007,35 +1678,25 @@
     </section>
 
 
-    <!-- ==============================
-         CONTACT / TEXT
-    ============================== -->
+    <!-- =========================
+         CONTACT
+    ========================= -->
 
     <section
-      class="contact-panel"
+      class="contact"
       id="contact">
 
-      <div class="container contact-panel-inner">
-
+      <div class="container contact-inner">
 
         <div>
-
-          <div class="contact-kicker">
-            FREE ESTIMATE
-          </div>
-
 
           <h2>
             Ready to get your HVAC project started?
           </h2>
 
-
           <p>
-
-            Call or text Sterling Heating &amp; Cooling, LLC
-            for a free estimate and discuss your heating or
-            cooling needs.
-
+            Call or text Sterling Heating & Cooling, LLC
+            for a free estimate.
           </p>
 
         </div>
@@ -2043,21 +1704,25 @@
 
         <div class="contact-actions">
 
+          <!-- CALL -->
+
           <a
             class="btn btn-red"
             href="tel:+19733431783">
 
-            ☎ CALL
+            CALL
             (973) 343-1783
 
           </a>
 
 
+          <!-- TEXT -->
+
           <a
             class="btn btn-blue"
             href="sms:+19733431783">
 
-            💬 TEXT US
+            TEXT US
 
           </a>
 
@@ -2068,9 +1733,9 @@
     </section>
 
 
-    <!-- ==============================
+    <!-- =========================
          BOTTOM CTA
-    ============================== -->
+    ========================= -->
 
     <div class="bottom-cta">
 
@@ -2081,13 +1746,11 @@
           ☎
         </span>
 
-
         <div>
 
           <small>
             Ready for Comfort You Can Count On?
           </small>
-
 
           <strong>
 
@@ -2104,12 +1767,11 @@
       </div>
 
 
-      <div class="bottom-estimate">
+      <div class="bottom-text">
 
         <span style="font-size:30px">
           💬
         </span>
-
 
         <div>
 
@@ -2117,13 +1779,11 @@
             Call or Text for Your FREE Estimate
           </small>
 
-
           <strong>
             No Obligation. Fast, Reliable Service.
           </strong>
 
         </div>
-
 
         <a
           class="btn btn-white"
@@ -2137,13 +1797,12 @@
 
     </div>
 
-
   </main>
 
 
-  <!-- ==============================
+  <!-- =========================
        FOOTER
-  ============================== -->
+  ========================= -->
 
   <footer>
 
@@ -2153,19 +1812,16 @@
       <div>
 
         <h3>
-          ❄️🔥 STERLING
+          STERLING
         </h3>
 
         <p>
-          Heating &amp; Cooling, LLC
+          Heating & Cooling, LLC
         </p>
 
         <p>
-
           Professional heating and cooling service
-          for Stanhope, NJ and the surrounding
-          local area.
-
+          for Stanhope, NJ and surrounding areas.
         </p>
 
       </div>
@@ -2180,33 +1836,23 @@
         <ul>
 
           <li>
-            <a href="#home">
-              Home
-            </a>
+            <a href="#home">Home</a>
           </li>
 
           <li>
-            <a href="#services">
-              Services
-            </a>
+            <a href="#services">Services</a>
           </li>
 
           <li>
-            <a href="#about">
-              About Us
-            </a>
+            <a href="#about">About Us</a>
           </li>
 
           <li>
-            <a href="#work">
-              Our Work
-            </a>
+            <a href="#work">Our Work</a>
           </li>
 
           <li>
-            <a href="#reviews">
-              Reviews
-            </a>
+            <a href="#reviews">Reviews</a>
           </li>
 
         </ul>
@@ -2250,7 +1896,7 @@
       <div>
 
         <h4>
-          CONTACT US
+          CONTACT
         </h4>
 
         <ul>
@@ -2259,32 +1905,28 @@
 
             <a href="tel:+19733431783">
 
-              ☎ (973) 343-1783
+              (973) 343-1783
 
             </a>
 
           </li>
-
 
           <li>
 
             <a href="sms:+19733431783">
 
-              💬 Text Us
+              Text Us
 
             </a>
 
           </li>
 
-
           <li>
-            📍 Stanhope, NJ
+            Stanhope, NJ
           </li>
 
-
           <li>
-            Serving Stanhope &amp;
-            Surrounding Areas
+            Serving Stanhope & Surrounding Areas
           </li>
 
         </ul>
@@ -2298,9 +1940,7 @@
 
       ©
       <span id="year"></span>
-
-      Sterling Heating &amp; Cooling, LLC.
-
+      Sterling Heating & Cooling, LLC.
       All Rights Reserved.
 
     </div>
@@ -2308,26 +1948,26 @@
   </footer>
 
 
-  <!-- ==============================
+  <!-- =========================
        MOBILE CALL BUTTON
-  ============================== -->
+  ========================= -->
 
   <a
     class="mobile-call"
     href="tel:+19733431783">
 
-    ☎ Call (973) 343-1783
+    Call (973) 343-1783
 
   </a>
 
 
-  <!-- ==============================
+  <!-- =========================
        JAVASCRIPT
-  ============================== -->
+  ========================= -->
 
   <script>
 
-    /* Mobile menu */
+    /* MOBILE MENU */
 
     const menuBtn =
       document.getElementById("menuBtn");
@@ -2338,7 +1978,7 @@
 
     menuBtn.addEventListener(
       "click",
-      function() {
+      function () {
 
         navLinks.classList.toggle("open");
 
@@ -2346,7 +1986,7 @@
     );
 
 
-    /* Close mobile menu after clicking */
+    /* CLOSE MOBILE MENU */
 
     document
       .querySelectorAll("#navLinks a")
@@ -2364,42 +2004,12 @@
       });
 
 
-    /* Current year */
+    /* CURRENT YEAR */
 
     document.getElementById("year").textContent =
       new Date().getFullYear();
 
-
-    /*
-      Make sure every telephone link
-      opens the phone app on supported devices.
-    */
-
-    document
-      .querySelectorAll('a[href^="tel:"]')
-      .forEach(function(link) {
-
-        link.addEventListener(
-          "click",
-          function() {
-
-            link.style.transform =
-              "scale(1.03)";
-
-            setTimeout(function() {
-
-              link.style.transform =
-                "";
-
-            }, 300);
-
-          }
-        );
-
-      });
-
   </script>
-
 
 </body>
 </html>
