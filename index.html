@@ -26,30 +26,43 @@ header{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,#fff,#
 nav{margin-left:auto;display:flex;align-items:center;gap:28px;font-weight:1000;font-size:14px}
 nav a{height:112px;display:flex;align-items:center;position:relative}
 nav a:hover{color:var(--red)}
-  /* Make navigation buttons always visible */
+/* RED NAVIGATION BUTTONS */
+
 .navbar nav a:not(.phone) {
-    color: #071b3d !important;
+    color: #ffffff !important;
+    background: #d00000 !important;
+
+    padding: 12px 17px !important;
+    height: 50px !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+    border: 1px solid #b00000;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+
     opacity: 1 !important;
     visibility: visible !important;
-    font-weight: 1000 !important;
-    background: transparent;
 }
 
-.navbar nav a:not(.phone):visited {
-    color: #071b3d !important;
-}
-
+/* Hover */
 .navbar nav a:not(.phone):hover {
-    color: #d00000 !important;
-    background: #f7f9fc;
+    background: #a80000 !important;
+    color: #ffffff !important;
 }
 
+/* Active button */
 .navbar nav a:not(.phone).active {
-    color: #071b3d !important;
+    background: #d00000 !important;
+    color: #ffffff !important;
 }
 
+/* Remove old underline */
 .navbar nav a:not(.phone).active::after {
-    background: #d00000 !important;
+    display: none !important;
 }
 nav a[href="#services"]{background:linear-gradient(135deg,#f2c94c,#b8860b);color:#000;height:52px;padding:0 15px;border-radius:6px;box-shadow:0 3px 10px #0006}
 nav a[href="#services"]:hover{color:#000;transform:translateY(-2px)}
