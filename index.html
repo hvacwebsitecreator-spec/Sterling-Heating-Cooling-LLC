@@ -311,6 +311,32 @@ border-color:#444;
 color:#72b9e8;
 }
 
+/* ===== FIX SERVICES DESKTOP LAYOUT ===== */
+
+@media (min-width: 801px) {
+
+    .service-layout {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) 270px !important;
+        gap: 18px !important;
+        align-items: start !important;
+    }
+
+    .cards {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+
+    .card {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+}
+
 </style>
 </head>
 <body>
